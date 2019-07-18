@@ -1,0 +1,14 @@
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 6fr 4fr;
+}
+img {
+    width: 50px;
+    margin-top: 10px;
+}
+.number {
+    margin-top: 20px;
+}
+button {
+    margin-top: 20px;
+}
