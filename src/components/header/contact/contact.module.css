@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 2fr 6fr 4fr;
 }
-img {
+.contact img {
     width: 50px;
     margin-top: 10px;
 }

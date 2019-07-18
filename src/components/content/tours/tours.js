@@ -8,3 +8,5 @@ const Tours = () => {
         </div>
     )
 }
+
+export default Tours
