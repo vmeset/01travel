@@ -1,18 +1,19 @@
 import React from 'react'
 import styles from './navigator.module.css'
-import {BrowserRouter} from "react-router-dom";
+import {NavLink, Route} from "react-router-dom";
+import Main from "../../content/main/main";
 
 const Navigator = () => {
     return (
         <div className={styles.navigator}>
             <div>
-                <a>Главная</a>
+                <NavLink to='/main'>Главная</NavLink>
             </div>
             <div>
-                Туры
+                <NavLink to='/tours'>Туры</NavLink>
             </div>
             <div>
-                Прокат
+                <NavLink to='/hire'>Прокат</NavLink>
             </div>
         </div>
     )
