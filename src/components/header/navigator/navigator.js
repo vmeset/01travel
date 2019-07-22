@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './navigator.module.css'
-import {NavLink, Route} from "react-router-dom";
-import Main from "../../content/main/main";
+import {NavLink} from "react-router-dom";
 
 const Navigator = () => {
     return (

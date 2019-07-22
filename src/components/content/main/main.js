@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './main.module.css'
+import ToursBlock from './toursBlock/toursBlock'
 
 const Main = () => {
     return (
         <div className={styles.mainBlock}>
-            main content
+            <ToursBlock />
         </div>
     )
 }

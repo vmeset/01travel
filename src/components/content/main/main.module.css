@@ -1,3 +1,7 @@
 .mainBlock {
     background-color: aqua;
 }
+
+.mainBlock .toursBlock {
+    background-color: chartreuse;
+}
