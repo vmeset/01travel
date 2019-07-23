@@ -2,10 +2,11 @@ import React from 'react'
 import styles from './main.module.css'
 import ToursBlock from './toursBlock/toursBlock'
 
-const Main = () => {
+const Main = (props) => {
+
     return (
         <div className={styles.mainBlock}>
-            <ToursBlock />
+            <ToursBlock td={props.td} />
         </div>
     )
 }

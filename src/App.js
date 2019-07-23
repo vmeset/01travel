@@ -5,15 +5,16 @@ import { BrowserRouter} from "react-router-dom";
 import Content from './components/content/content'
 
 
-function App() {
-  return (
-      <BrowserRouter>
-        <div className={styles.App}>
-          <Head />
-          <Content />
-        </div>
-      </BrowserRouter>
-  );
+function App(props) {
+
+      return (
+          <BrowserRouter>
+            <div className={styles.App}>
+              <Head />
+              <Content td={props.td}/>
+            </div>
+          </BrowserRouter>
+      );
 }
 
 export default App;

@@ -6,10 +6,11 @@ import Hire from './hire/hire'
 import { Route } from "react-router-dom";
 
 
-const Content = () => {
+const Content = (props) => {
+
     return (
         <div className={styles.contentBlock}>
-            <Route path='/main' render={ () => <Main /> } />
+            <Route path='/main' render={ () => <Main td={props.td}/> } />
             <Route path='/tours' render={ () => <Tours /> } />
             <Route path='/hire' render={ () => <Hire /> } />
         </div>
