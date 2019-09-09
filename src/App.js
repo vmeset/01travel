@@ -11,7 +11,7 @@ function App(props) {
           <BrowserRouter>
             <div className={styles.App}>
               <Head />
-              <Content td={props.td}/>
+              <Content td={props.td} ci={props.ci} />
             </div>
           </BrowserRouter>
       );

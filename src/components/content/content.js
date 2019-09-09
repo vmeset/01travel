@@ -11,7 +11,7 @@ const Content = (props) => {
     return (
         <div className={styles.contentBlock}>
             <Route path='/main' render={ () => <Main td={props.td}/> } />
-            <Route path='/tours' render={ () => <Tours /> } />
+            <Route path='/tours' render={ () => <Tours td={props.td} /> } />
             <Route path='/hire' render={ () => <Hire /> } />
         </div>
     )
