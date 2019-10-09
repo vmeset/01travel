@@ -40,4 +40,16 @@ let store = {
     }
 }
 
+export const addClientActionCreator = () => {
+    return {
+        type: 'ADD-CLIENT'
+    }
+}
+export const updateEmailActionCreator = (text) => {
+    return {
+        type: 'UPDATE-EMAIL',
+        text: text
+    }
+}
+
 export default store

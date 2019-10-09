@@ -1,16 +1,18 @@
 import React from 'react'
+import {addClientActionCreator} from '../../state/state'
+import {updateEmailActionCreator} from '../../state/state'
 
 let ContactForm = (props) => {
 
     let newEmail = React.createRef()
 
     let addClient = () => {
-        props.dispatch ({type: 'ADD-CLIENT'})
+        props.dispatch (addClientActionCreator())
     }
 
     let onEmailChange = () => {
         let text = newEmail.current.value
-        props.dispatch({type: 'UPDATE-EMAIL', text: text})
+        props.dispatch(updateEmailActionCreator(text))
     }
 
     return (
