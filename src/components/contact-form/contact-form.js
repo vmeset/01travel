@@ -1,28 +1,31 @@
 import React from 'react'
 
-let ContactForm = () => {
+let ContactForm = (props) => {
 
-    let onSendForm = () => {
-        alert('!')
+    let newEmail = React.createRef()
+
+    let addClient = () => {
+        props.dispatch ({type: 'ADD-CLIENT'})
     }
 
-    let newName = () => {
-
+    let onEmailChange = () => {
+        let text = newEmail.current.value
+        props.dispatch({type: 'UPDATE-EMAIL', text: text})
     }
 
     return (
         <div className="contactForm">
             <div>
-                <textarea placeholder="Имя" value={newName} onChange={newName} />
+                <textarea placeholder="Имя" />
             </div>
             <div>
-                <textarea placeholder="Email" />
+                <textarea ref={newEmail} value={props.clients.newEmailText} onChange={onEmailChange} />
             </div>
             <div>
                 <textarea placeholder="Телефон" />
             </div>
             <div>
-                <button onClick={onSendForm}>Отправить</button>
+                <button onClick={addClient}>Отправить</button>
             </div>
         </div>
     )

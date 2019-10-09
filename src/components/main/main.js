@@ -7,7 +7,7 @@ const Main = (props) => {
 
     return (
         <div className={styles.mainBlock}>
-            <ContactForm />
+            <ContactForm dispatch={props.dispatch} clients={props.clients} />
             <ToursBlock td={props.td} />
         </div>
     )

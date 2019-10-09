@@ -6,14 +6,14 @@ import Tours from './components/tours/tours'
 import Hire from './components/hire/hire'
 import { Route } from "react-router-dom";
 
-
 function App(props) {
 
       return (
             <div className={styles.App}>
               <Head />
               <div className=''>
-                <Route path='/main' render={ () => <Main td={props.td}/> } />
+                <Route path='/main' render={ () => <Main td={props.td} dispatch={props.dispatch} 
+                                                            clients={props.clients} /> } />
                 <Route path='/tours' render={ () => <Tours td={props.td} /> } />
                 <Route path='/hire' render={ () => <Hire /> } />
               </div>
