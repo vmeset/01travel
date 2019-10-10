@@ -2,6 +2,7 @@ import React from 'react'
 import style from './card.module.css'
 import Slider from "./slider/slider";
 import Info from './info/info'
+import Comment from '../card/comment/comment'
 
 const Card = (props) => {
 
@@ -15,7 +16,7 @@ const Card = (props) => {
             <div>
                 {cardInfo}
             </div>
-
+            <Comment />
         </div>
     )
 }
