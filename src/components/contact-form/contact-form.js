@@ -21,7 +21,7 @@ let ContactForm = (props) => {
                 <textarea placeholder="Имя" />
             </div>
             <div>
-                <textarea ref={newEmail} value={props.clients.newEmailText} onChange={onEmailChange} />
+                <textarea ref={newEmail} value={props.state.clients.newEmailText} onChange={onEmailChange} />
             </div>
             <div>
                 <textarea placeholder="Телефон" />

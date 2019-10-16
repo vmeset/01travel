@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Comment = () => {
+const Comment = (props) => {    
+
     return (
         <div>
-            <textarea />
+            <div>
+                {props.user}
+            </div>
+            <div>
+                {props.comment}
+            </div>
         </div>
     )
 }

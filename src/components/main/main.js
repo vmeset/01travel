@@ -7,8 +7,8 @@ const Main = (props) => {
 
     return (
         <div className={styles.mainBlock}>
-            <ContactForm dispatch={props.dispatch} clients={props.clients} />
-            <ToursBlock td={props.td} />
+            <ContactForm dispatch={props.dispatch} state={props.state} />
+            <ToursBlock state={props.state} />
         </div>
     )
 }

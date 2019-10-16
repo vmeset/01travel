@@ -5,7 +5,7 @@ import Card from "./card/card";
 const Tours = (props) => {
     return (
         <div className={styles.toursBlock}>
-            <Card td={props.td} />
+            <Card state={props.state} dispatch={props.dispatch}/>
         </div>
     )
 }

@@ -12,9 +12,8 @@ function App(props) {
             <div className={styles.App}>
               <Head />
               <div className=''>
-                <Route path='/main' render={ () => <Main td={props.td} dispatch={props.dispatch} 
-                                                            clients={props.clients} /> } />
-                <Route path='/tours' render={ () => <Tours td={props.td} /> } />
+                <Route path='/main' render={ () => <Main state={props.state} dispatch={props.dispatch} /> } />
+                <Route path='/tours' render={ () => <Tours state={props.state} dispatch={props.dispatch} /> } />
                 <Route path='/hire' render={ () => <Hire /> } />
               </div>
               
