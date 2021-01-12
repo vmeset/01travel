@@ -1,4 +1,14 @@
 .App {
-  width: 1000px;
-  margin: 10px auto;
+    display: grid;
+    grid-template-rows: 66px 1fr;
+    grid-row-gap: 20px;
+}
+.content {
+    grid-row: 2 / 4;
+}
+.toursBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
 }

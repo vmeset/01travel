@@ -1,5 +1,35 @@
 .navigator {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    margin-top: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr;
+    margin-top: 20px;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.navigator {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navigator a {
+    color: blanchedalmond;
+}
+.navigator a:hover {
+    color: white;
+}
+.orderButton {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: Ubuntu;
+    text-align: center;
+}
+div.orderButton:hover {
+    background-color: white;
+    color: black;
+    margin-top: -20px;
+    padding-top: 20px;
 }

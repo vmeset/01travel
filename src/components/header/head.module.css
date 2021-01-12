@@ -1,8 +1,10 @@
-.headerClass {
-    display: grid;
-    grid-template-columns: 2fr 6fr 4fr;
-}
-
 .logo img {
     width: 150px;
+}
+.headWrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 1fr ;
+    background-color: rgba(26, 26, 26, 0.8);
+    position: fixed;
 }

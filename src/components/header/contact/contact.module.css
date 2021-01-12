@@ -1,14 +1,21 @@
 .contact {
     display: grid;
-    grid-template-columns: 2fr 6fr 4fr;
-}
-.contact img {
-    width: 50px;
-    margin-top: 10px;
+    grid-template-columns: 8fr 4fr;
+    color: blanchedalmond;
 }
 .number {
     margin-top: 20px;
 }
-button {
-    margin-top: 20px;
-}
+/*button {*/
+/*    background-color: inherit;*/
+/*    border: none;*/
+/*    color: blanchedalmond;*/
+/*    padding: 15px 32px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*}*/
+/*button:hover {*/
+/*    background-color: #4CAF50;*/
+/*}*/
